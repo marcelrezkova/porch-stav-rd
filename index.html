@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORCH STAV s.r.o. | Stavby rodinných domů</title>
+  <meta name="description" content="PORCH STAV s.r.o. – kompletní výstavba, rekonstrukce a stavební práce. Spolehlivý partner pro váš nový domov." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans text-gray-800">
+
+<!-- Navigace -->
+<nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold text-yellow-700">🏠 PORCH STAV</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#uvod" class="nav-link">Úvod</a>
+        <a href="#o-firme" class="nav-link">O firmě</a>
+        <a href="#sluzby" class="nav-link">Služby</a>
+        <a href="#galerie" class="nav-link">Galerie</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 hover:text-yellow-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#uvod" class="mobile-nav-link">Úvod</a>
+        <a href="#o-firme" class="mobile-nav-link">O firmě</a>
+        <a href="#sluzby" class="mobile-nav-link">Služby</a>
+        <a href="#galerie" class="mobile-nav-link">Galerie</a>
+        <a href="#kontakt" class="mobile-nav-link">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Úvodní sekce -->
+<section id="uvod" class="min-h-screen flex items-center bg-gradient-to-br from-yellow-50 to-white pt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+          Stavíme <span class="text-yellow-700">rodinné domy</span> s důrazem na kvalitu
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Kompletní výstavba, rekonstrukce i zednické práce. <br />
+          Jsme <strong>PORCH STAV s.r.o.</strong> – váš spolehlivý partner pro stavbu domova.
+        </p>
+        <a href="#kontakt" class="cta-button">Nezávazná konzultace zdarma</a>
+      </div>
+      <div class="relative">
+        <img src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=800"
+             alt="Stavební práce na domě"
+             class="rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O firmě -->
+<section id="o-firme" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8 text-gray-900">O naší firmě</h2>
+    <div class="max-w-4xl mx-auto">
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        Společnost <strong>PORCH STAV s.r.o.</strong> byla založena s cílem poskytovat kvalitní stavební služby
+        jednotlivcům i rodinám po celé České republice. Specializujeme se na stavby rodinných domů, rekonstrukce a
+        kompletní zednické práce.
+      </p>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Každý projekt je pro nás jedinečný – zakládáme si na férovém jednání, poctivém řemeslu
+        a důslednosti v každém detailu. Naším cílem je vytvořit pro vás domov, který bude sloužit generacím.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      <div class="text-center">
+        <div class="text-4xl font-bold text-yellow-700 mb-2">15+</div>
+        <p class="text-gray-600">let zkušeností</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl font-bold text-yellow-700 mb-2">200+</div>
+        <p class="text-gray-600">dokončených projektů</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl font-bold text-yellow-700 mb-2">100%</div>
+        <p class="text-gray-600">spokojených klientů</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Služby -->
+<section id="sluzby" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Naše služby</h2>
+      <p class="text-lg text-gray-600">Kompletní spektrum stavebních služeb pro váš domov</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="service-card">
+        <div class="text-3xl mb-4">🏗️</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Výstavba domů</h3>
+        <p class="text-gray-600">Hrubá stavba i stavba na klíč dle individuálních projektů. Od základů až po finální úpravy.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-3xl mb-4">🔨</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Rekonstrukce</h3>
+        <p class="text-gray-600">Byty, domy, koupelny, půdní vestavby a další úpravy. Moderní řešení pro starší objekty.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-3xl mb-4">🧱</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Zednické práce</h3>
+        <p class="text-gray-600">Zdivo, omítky, příčky, fasády a další drobné stavební práce s důrazem na kvalitu.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-3xl mb-4">📝</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Stavební poradenství</h3>
+        <p class="text-gray-600">Konzultace, plánování a technické vedení projektu od prvního návrhu po kolaudaci.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-3xl mb-4">🔧</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Demolice a příprava</h3>
+        <p class="text-gray-600">Příprava pozemku, bourací práce, odvoz suti. Profesionální příprava pro novou výstavbu.</p>
+      </div>
+      <div class="service-card">
+        <div class="text-3xl mb-4">🚚</div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Koordinace dodavatelů</h3>
+        <p class="text-gray-600">Řízení subdodavatelů, plánování a dohled. Jeden kontakt pro celý projekt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galerie -->
+<section id="galerie" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-gray-900">Ukázky naší práce</h2>
+    <p class="text-lg text-gray-600 mb-12">Nahlédněte do vybraných projektů z posledních let</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Rodinný dům" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Rodinný dům na klíč</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Rekonstrukce interiéru" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Rekonstrukce interiéru</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Stavba základové desky" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Stavba základů</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Moderní fasáda" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Moderní fasáda</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Koupelna po rekonstrukci" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Rekonstrukce koupelny</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600" 
+             alt="Půdní vestavba" 
+             loading="lazy" />
+        <div class="gallery-overlay">
+          <p class="text-white font-semibold">Půdní vestavba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="py-20 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-gray-900">Kontaktujte nás</h2>
+    <p class="text-gray-600 mb-8">Rádi s vámi nezávazně probereme vaši stavbu nebo rekonstrukci</p>
+    
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="contact-card">
+        <h3 class="text-xl font-semibold mb-4 text-gray-900">📞 Telefonní kontakt</h3>
+        <a href="tel:+420777123456" class="text-2xl font-bold text-yellow-700 hover:text-yellow-800 transition-colors">
+          +420 777 123 456
+        </a>
+        <p class="text-gray-600 mt-2">Volejte Po-Pá 7:00-18:00</p>
+      </div>
+      <div class="contact-card">
+        <h3 class="text-xl font-semibold mb-4 text-gray-900">✉️ E-mailový kontakt</h3>
+        <a href="mailto:info@porchstav.cz" class="text-2xl font-bold text-yellow-700 hover:text-yellow-800 transition-colors">
+          info@porchstav.cz
+        </a>
+        <p class="text-gray-600 mt-2">Odpovídáme do 24 hodin</p>
+      </div>
+    </div>
+    
+    <a href="#kontakt" class="cta-button" onclick="scrollToContact()">Nezávazná konzultace zdarma</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-yellow-400">🏠 PORCH STAV</h3>
+        <p class="text-gray-400">Váš spolehlivý partner pro kvalitní stavby a rekonstrukce rodinných domů.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Kontakt</h4>
+        <p class="text-gray-400 mb-2">📞 +420 777 123 456</p>
+        <p class="text-gray-400 mb-2">✉️ info@porchstav.cz</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Služby</h4>
+        <ul class="text-gray-400 space-y-1">
+          <li>Výstavba domů</li>
+          <li>Rekonstrukce</li>
+          <li>Zednické práce</li>
+          <li>Stavební poradenství</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-400">&copy; 2025 PORCH STAV s.r.o. | IČO: 21257116 | Všechna práva vyhrazena</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
