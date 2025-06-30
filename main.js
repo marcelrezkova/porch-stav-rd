@@ -72,28 +72,31 @@ document.addEventListener('DOMContentLoaded', function() {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
   });
-  
-  // Lazy loading pro obrázky
-  const images = document.querySelectorAll('img[loading="lazy"]');
-  const imageObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.3s ease';
-        
+
+// Funkce pro lazy loanding obrázků
+const images = document.querySelectorAll('img[loading="lazy"]');
+const imageObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      img.style.opacity = '0';
+      img.style.transition = 'opacity 0.3s ease';
+
+      if (img.complete) {
+        img.style.opacity = '1';
+      } else {
         img.onload = function() {
           img.style.opacity = '1';
         };
-        
-        imageObserver.unobserve(img);
       }
-    });
+
+      imageObserver.unobserve(img);
+    }
   });
-  
-  images.forEach(img => {
-    imageObserver.observe(img);
-  });
+});
+
+images.forEach(img => {
+  imageObserver.observe(img);
 });
 
 // Funkce pro kontaktní formulář (pro budoucí rozšíření)
